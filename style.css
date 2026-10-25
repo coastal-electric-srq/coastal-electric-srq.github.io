@@ -1,0 +1,99 @@
+:root{/* black & white palette based on the live Mailchimp site, lightened to soft charcoal per Chester (#2f2f2f ink, #4a4a4a hover, white) */--navy:#2f2f2f;--sea:#2f2f2f;--sea-d:#2f2f2f;--hover:#4a4a4a;--sand:#f2f2f2;--amber:#ffffff;--ink:#2f2f2f;--muted:#555555;--line:#dedede;--r:14px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff;padding-bottom:64px}
+@media(min-width:900px){body{padding-bottom:0}}
+img{max-width:100%;height:auto;display:block}a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:2px}a:hover{color:var(--hover)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.draft-banner{background:#7a1f1f;color:#fff;text-align:center;font-size:13px;padding:6px}
+.ph{background:#fff3c4;border:1px dashed #c99a00;padding:0 4px;border-radius:4px;font-size:.92em}
+header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+header.site .wrap{display:flex;align-items:center;gap:16px;min-height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:800;letter-spacing:.3px}
+.brand img{height:48px;width:auto}
+nav.main{margin-left:auto;display:none}
+nav.main ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;flex-wrap:wrap}
+nav.main a{display:block;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--ink);font-size:15px;font-weight:600}
+nav.main a:hover,nav.main a[aria-current]{background:var(--sand)}
+.hdr-call{margin-left:auto;white-space:nowrap}
+@media(min-width:1000px){nav.main{display:block}.hdr-call{margin-left:0}}
+details.mnav{margin-left:8px}@media(min-width:1000px){details.mnav{display:none}}
+details.mnav summary{list-style:none;cursor:pointer;padding:8px 12px;border:1px solid var(--line);border-radius:8px;font-weight:700}
+details.mnav ul{position:absolute;right:12px;top:64px;background:#fff;border:1px solid var(--line);border-radius:12px;list-style:none;padding:8px;margin:0;box-shadow:0 10px 30px rgba(0,0,0,.12);min-width:240px}
+details.mnav a{display:block;padding:10px 12px;text-decoration:none;color:var(--ink);font-weight:600}
+.btn{display:inline-block;padding:12px 20px;border-radius:999px;font-weight:800;text-decoration:none;border:2px solid transparent;line-height:1.2}
+.btn-call{background:var(--ink);color:#fff;border-color:var(--ink)}.btn-call:hover{background:var(--hover);border-color:var(--hover);color:#fff}
+.btn-text{background:#fff;color:var(--navy);border-color:var(--navy)}
+.btn-sea{background:var(--ink);color:#fff}.btn-sea:hover,.btn-text:hover{background:var(--hover);border-color:var(--hover);color:#fff}
+.hero{position:relative;color:#fff;background:var(--navy)}
+.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.38}
+.hero .wrap{position:relative;padding:72px 20px 64px}
+.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.1;margin:0 0 14px;max-width:780px}
+.hero p.lead{font-size:clamp(17px,2.2vw,21px);max-width:680px;margin:0 0 24px;color:#ececec}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}.hero .btn-call,.cta-band .btn-call{background:#fff;color:var(--ink);border-color:#fff}.hero .btn-call:hover,.cta-band .btn-call:hover{background:#dedede;border-color:#dedede;color:var(--ink)}.hero .btn-text{background:transparent;color:#fff;border-color:#fff}
+.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px;font-size:15px;color:#e0e0e0}.trust span:before{content:"✓ ";color:var(--amber);font-weight:900}
+section{padding:56px 0}section.alt{background:var(--sand)}
+h2{font-size:clamp(24px,3.2vw,34px);line-height:1.2;color:var(--navy);margin:0 0 12px}
+h3{color:var(--navy);margin:0 0 6px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;text-decoration:none;color:inherit;display:block}
+a.card:hover{border-color:var(--sea);box-shadow:0 6px 20px rgba(0,0,0,.12)}
+.card .tag{display:inline-block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--sea-d);margin-bottom:6px}
+.card.feature{border:2px solid var(--sea)}
+.two{display:grid;gap:32px;align-items:center}@media(min-width:860px){.two{grid-template-columns:1.1fr .9fr}}
+.two img{border-radius:var(--r)}
+ul.checks{padding:0;list-style:none}ul.checks li{padding-left:28px;position:relative;margin:6px 0}ul.checks li:before{content:"✓";position:absolute;left:0;color:var(--sea);font-weight:900}
+.steps{counter-reset:s;display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));padding:0;list-style:none}
+.steps li{background:#fff;border-radius:var(--r);padding:20px;border:1px solid var(--line)}
+.steps li:before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;margin-bottom:8px}
+.cta-band{background:var(--ink);color:#fff;text-align:center}.cta-band h2{color:#fff}.cta-band .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-band .btn-text{background:transparent;color:#fff;border-color:#fff}
+.faq details{border-bottom:1px solid var(--line);padding:14px 0}.faq summary{font-weight:700;cursor:pointer;color:var(--navy)}
+.areas{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.areas li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600}
+.note{font-size:14px;color:var(--muted)}
+.post-meta{color:var(--muted);font-size:14px}
+footer.site{background:var(--navy);color:#e0e0e0;padding:44px 0 24px;font-size:15px}
+footer.site a{color:#fff}footer.site .cols{display:grid;gap:24px}@media(min-width:800px){footer.site .cols{grid-template-columns:1.2fr 1fr 1fr}}
+footer.site h4{color:#fff;margin:0 0 8px}footer.site ul{list-style:none;padding:0;margin:0}footer.site li{margin:4px 0}
+.license{margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.2);font-size:14px}
+.mbar{position:fixed;bottom:0;left:0;right:0;display:grid;grid-template-columns:1fr 1fr;z-index:30;box-shadow:0 -4px 16px rgba(0,0,0,.15)}
+.mbar a{padding:16px;text-align:center;font-weight:800;text-decoration:none}.mbar .c{background:var(--ink);color:#fff}.mbar .t{background:#fff;color:var(--ink);border-top:1px solid var(--line)}
+@media(min-width:900px){.mbar{display:none}}
+.crumbs{font-size:14px;color:#e0e0e0;margin-bottom:10px}.crumbs a{color:#fff}
+/* fixes after first preview */
+.brand span{display:none}@media(min-width:1280px){.brand span{display:inline}}
+.hdr-call{display:none}@media(min-width:900px){.hdr-call{display:inline-block}}
+details.mnav{margin-left:auto}@media(min-width:1000px){details.mnav{display:none}}
+nav.main a{padding:8px 8px;font-size:14.5px}nav.main ul{flex-wrap:nowrap}
+.steps li:before{display:grid}
+nav.main a{white-space:nowrap}.brand span{display:none}@media(min-width:1360px){.brand span{display:inline}}
+@media(min-width:1000px) and (max-width:1180px){nav.main a{padding:8px 5px;font-size:13.5px}}
+/* merge additions */
+.rating{font-size:18px}.rating .stars{color:var(--ink);letter-spacing:2px}
+.review blockquote{font-size:16px;line-height:1.5}
+/* header logo: icon-only mark with the name beside it (Chester, Oct 25) */
+.brand img{height:52px;width:52px}
+.brand span,.brand span{display:inline}
+.brand span{font-size:20px;line-height:1.1;white-space:nowrap}
+@media(min-width:1000px) and (max-width:1279px){.brand img{height:46px;width:46px}.brand span{font-size:17px}}
+@media(max-width:380px){.brand img{height:44px;width:44px}.brand span{font-size:17px}}
+/* stacked header logo: name centered under the round icon (Chester, Oct 25 11:32) */
+header.site .wrap{min-height:104px;padding-top:8px;padding-bottom:8px}
+.brand{flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center}
+.brand img{height:60px;width:60px}
+.brand span{display:block;font-size:15px;line-height:1.1;letter-spacing:.2px}
+@media(min-width:1000px) and (max-width:1279px){.brand img{height:56px;width:56px}.brand span{font-size:14px}}
+details.mnav ul{top:96px}
+@media(max-width:899px){header.site .wrap{min-height:78px;padding-top:6px;padding-bottom:6px}.brand img{height:44px;width:44px}.brand span{font-size:12.5px}details.mnav ul{top:74px}}
+@media(max-width:380px){.brand img{height:40px;width:40px}.brand span{font-size:12px}}
+/* bigger stacked logo, ~40% up (Chester, Oct 25 11:35) */
+header.site .wrap{min-height:130px}
+.brand{gap:5px}.brand img{height:84px;width:84px}.brand span{font-size:20px}
+@media(min-width:1000px) and (max-width:1279px){.brand img{height:78px;width:78px}.brand span{font-size:18px}}
+details.mnav ul{top:122px}
+@media(max-width:899px){header.site .wrap{min-height:90px}.brand{gap:3px}.brand img{height:54px;width:54px}.brand span{font-size:14px}details.mnav ul{top:86px}}
+@media(max-width:380px){.brand img{height:50px;width:50px}.brand span{font-size:13px}}
+/* original full logo in header, charcoal (Chester, Oct 25 11:38) — revert this commit for the icon + wordmark version */
+.brand-full img{height:114px;width:auto}
+@media(min-width:1000px) and (max-width:1279px){.brand-full img{height:106px;width:auto}}
+@media(max-width:899px){.brand-full img{height:72px;width:auto}}
+@media(max-width:380px){.brand-full img{height:66px;width:auto}}
