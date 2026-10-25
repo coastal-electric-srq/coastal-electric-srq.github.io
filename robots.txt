@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /
-# STAGING: flip to 'Allow: /' at go-live
+Allow: /
 
 Sitemap: https://www.coastalelectricsrq.com/sitemap.xml
