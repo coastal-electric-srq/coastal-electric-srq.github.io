@@ -53,7 +53,7 @@ ul.checks{padding:0;list-style:none}ul.checks li{padding-left:28px;position:rela
 .post-meta{color:var(--muted);font-size:14px}
 footer.site{background:var(--navy);color:#e0e0e0;padding:44px 0 24px;font-size:15px}
 footer.site a{color:#fff}footer.site .cols{display:grid;gap:24px}@media(min-width:800px){footer.site .cols{grid-template-columns:1.2fr 1fr 1fr}}
-footer.site h4{color:#fff;margin:0 0 8px}footer.site ul{list-style:none;padding:0;margin:0}footer.site li{margin:4px 0}
+footer.site h2{color:#fff;margin:0 0 8px;font-size:1em;line-height:inherit}footer.site ul{list-style:none;padding:0;margin:0}footer.site li{margin:4px 0}
 .license{margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.2);font-size:14px}
 .mbar{position:fixed;bottom:0;left:0;right:0;display:grid;grid-template-columns:1fr 1fr;z-index:30;box-shadow:0 -4px 16px rgba(0,0,0,.15)}
 .mbar a{padding:16px;text-align:center;font-weight:800;text-decoration:none}.mbar .c{background:var(--ink);color:#fff}.mbar .t{background:#fff;color:var(--ink);border-top:1px solid var(--line)}
