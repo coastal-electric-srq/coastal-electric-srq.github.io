@@ -1,4 +1,4 @@
-# Netlify-style redirects (GitHub Pages ignores this file; meta-refresh stubs cover it). See REDIRECTS.md.
+# Netlify-style redirects (GitHub Pages ignores this file; meta-refresh stubs cover it).
 /home  /  301
 /services  /#services  301
 /pool  /pool-spa/  301
