@@ -1,0 +1,17 @@
+# Netlify-style redirects (GitHub Pages ignores this file; meta-refresh stubs cover it). See REDIRECTS.md.
+/home  /  301
+/services  /#services  301
+/pool  /pool-spa/  301
+/pool-and-spa  /pool-spa/  301
+/ev-charger  /ev-chargers/  301
+/ev-charging  /ev-chargers/  301
+/generator  /generator-interlocks-surge-protection/  301
+/hurricane-prep  /generator-interlocks-surge-protection/  301
+/surge-protection  /generator-interlocks-surge-protection/  301
+/panel-upgrade  /panel-upgrades/  301
+/hoa  /hoa-commercial-condo/  301
+/commercial  /hoa-commercial-condo/  301
+/service-area  /service-areas/  301
+/faqs  /faq/  301
+/contact-us  /contact/  301
+/work-order  /hoa-commercial-condo/  301
