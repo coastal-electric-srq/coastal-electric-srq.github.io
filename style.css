@@ -110,3 +110,11 @@ footer.site .social a:hover{background:#fff;color:var(--ink);border-color:#fff}
 footer.site .social a:focus-visible{outline-color:#fff}
 .hero p.eyebrow{font-size:14px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#e0e0e0;margin:0 0 8px}
 #variable-speed-pump-diagnosis,#4-point-inspection-corrections,#double-tapped-breakers,#aluminum-wiring,#led-lighting-installation{scroll-margin-top:150px}
+/* Under-cabinet before/after (lighting page, Nov 2026): side by side on desktop, stacked on mobile */
+.ba-grid{display:grid;gap:18px;grid-template-columns:1fr;margin:22px 0 10px}
+@media(min-width:720px){.ba-grid{grid-template-columns:1fr 1fr}}
+.ba-card{margin:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;position:relative}
+.ba-card img{width:100%;height:auto;display:block;aspect-ratio:1400/1024;object-fit:cover}
+.ba-label{position:absolute;top:12px;left:12px;z-index:1;background:rgba(47,47,47,.92);color:#fff;font-size:13px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.ba-caption{margin:8px 0 0;color:var(--muted);font-size:15px}
+#under-cabinet{scroll-margin-top:140px}
